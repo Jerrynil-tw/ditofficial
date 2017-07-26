@@ -1,0 +1,81 @@
+#one {
+
+  background-image: url('<%= asset_path("Banner_2.jpg") %>');
+  background-size: 100% 100%;
+  background-position: top;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  text-align: center;
+  /*border-top: 0.5em solid #5385c1;*/
+}
+
+//lg
+@media screen and (min-width:992px){
+  #one p {
+    color: #409FB2;
+    font-weight: 900;
+    font-size: 10em;
+  }
+  #one h2 {
+    letter-spacing: 1px;
+    font-size: 2em;
+    font-weight: 400;
+  }
+
+  #one .header {
+    padding-top: 2em;
+  }
+
+  #one .description {
+    padding-top: 5em;
+    padding-bottom: 13em;
+  }
+}
+
+//md
+@media screen and (min-width:768px){
+  #one p {
+      color: #409FB2;
+      font-weight: 700;
+      font-size: 3.5em;
+    }
+    #one h2 {
+      letter-spacing: 1px;
+      font-size: 2em;
+      font-weight: 450;
+      text-align: center;
+    }
+
+    #one .header {
+      padding-top: 2em;
+    }
+
+    #one .description {
+      padding-top: 2em;
+      padding-bottom: 7em;
+    }
+}
+
+//xs
+@media screen and (max-width:767px){
+  #one p {
+      color: #409FB2;
+      font-weight: 700;
+      font-size: 2.3em;
+    }
+    #one h2 {
+      letter-spacing: 1px;
+      font-size: 1.5em;
+      font-weight: 300;
+      text-align: justify;
+    }
+
+    #one .header {
+      padding-top: 1.5em;
+    }
+
+    #one .description {
+      padding-top: 1.5em;
+      padding-bottom: 6em;
+    }
+}
