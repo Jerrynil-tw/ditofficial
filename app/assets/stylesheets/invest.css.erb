@@ -24,15 +24,6 @@
       text-align: center;
       line-height: 1.2em;
     }
-
-    #one .header {
-      padding-top: 2em;
-    }
-
-    #one .description {
-      padding-top: 5em;
-      padding-bottom: 14em;
-    }
 }
 
 //xs
@@ -48,15 +39,6 @@
       font-weight: 300;
       text-align: justify;
     }
-
-    #one .header {
-      padding-top: 1.5em;
-    }
-
-    #one .description {
-      padding-top: 1.5em;
-      padding-bottom: 6em;
-    }
 }
 
 #two {
@@ -70,41 +52,51 @@
   /*border-top: 0.5em solid #5385c1;*/
 }
 
+
+
 //md
 @media screen and (min-width:768px){
   #two p {
       color: #409FB2;
       font-weight: 800;
-      font-size: 4.7em;
+      font-size: 36px;
   }
   #two h2 {
     letter-spacing: 1px;
-    font-size: 2em;
+    font-size: 20px;
     font-weight: 400;
     text-align: center;
     line-height: 1.2em;
-  }
-
-  #two .header {
-    padding-top: 2em;
-  }
-
-  #two .description {
-    padding-top: 2em;
-    padding-bottom: 3em;
   }
 
   #two .img-responsive {
     max-width: 250px;
   }
 
+  #two .description {
+    padding-top: 3em;
+    padding-bottom: 5em;
+  }
+
   #two .pic {
     padding: 1em 1em;
   }
 
+  #two .item {
+    padding: 10px;
+    margin-bottom: 20px;
+  }
 
-  #two .row {
-    padding-top: 2em;
+  #two .item .img-responsive {
+    width: 100%;
+  }
+
+  #two .center-big {
+    padding-top: 55px;
+  }
+
+  #two .center-small {
+    padding-top: 35px;
   }
 }
 //sm
@@ -112,6 +104,10 @@
 
   #two .description {
     text-align: justify;
+    padding-top: 0;
+  }
+  #two .center-big {
+    padding-top: 45px;
   }
 }
 
@@ -129,19 +125,29 @@
     text-align: justify;
   }
 
-  #two .header {
-    padding-top: 1.5em;
+  #two .pic {
+    padding: 1em 1em;
+  }
+
+  #two .item {
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  #two .item .img-responsive {
+    width: 100%;
   }
 
   #two .description {
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
+    padding-bottom: 15px;
   }
 
+  #two .center-big {
+    padding-top: 30px;
+  }
 
-
-  #two .pic {
-    padding: 1em 1em;
+  #two .center-small {
+    /*padding-top: 35px;*/
   }
 }
 
