@@ -1,6 +1,6 @@
 #one {
 
-  background-image: url('<%= asset_path("Banner_2.jpg") %>');
+  background-image: url('<%= asset_path("index/invest.jpg") %>');
   background-size: 100% 100%;
   background-position: top;
   background-attachment: scroll;
@@ -10,35 +10,47 @@
 }
 
 
+
 //md
 @media screen and (min-width:768px){
   #one p {
-      color: #409FB2;
-      font-weight: 800;
-      font-size: 4.7em;
-    }
-    #one h2 {
-      letter-spacing: 1px;
-      font-size: 2em;
-      font-weight: 400;
-      text-align: center;
-      line-height: 1.2em;
-    }
+    color: #409FB2;
+    font-weight: 800;
+    font-size: 36px;
+  }
+  #one h2 {
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.2em;
+  }
+  #one .header {
+    padding-bottom: 4em;
+  }
+
+  #one .number {
+    padding-bottom: 2em;
+  }
 }
 
 //xs
 @media screen and (max-width:767px){
   #one p {
-      color: #409FB2;
-      font-weight: 700;
-      font-size: 2.3em;
-    }
-    #one h2 {
-      letter-spacing: 1px;
-      font-size: 1.5em;
-      font-weight: 300;
-      text-align: justify;
-    }
+    color: #409FB2;
+    font-weight: 700;
+    font-size: 20px;
+
+  }
+  #one h2 {
+    letter-spacing: 1px;
+    font-size: 1.5em;
+    font-weight: 300;
+    text-align:center;
+  }
+  #one .header {
+    padding-bottom: 1em;
+  }
 }
 
 #two {
@@ -67,6 +79,10 @@
     font-weight: 400;
     text-align: center;
     line-height: 1.2em;
+  }
+
+  #two .header {
+    padding-bottom: 2em;
   }
 
   #two .img-responsive {
