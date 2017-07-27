@@ -1666,17 +1666,21 @@
 			text-decoration: none;
 		}
 
+	h1 {
+		font-size: 36px;
+	}
+
 	h2 {
-		font-size: 1.75em;
+		font-size: 24px;
 		font-weight: 100;
 	}
 
 	h3 {
-		font-size: 1.35em;
+		font-size: 20px;
 	}
 
 	h4 {
-		font-size: 1.1em;
+		font-size: 14px;
 	}
 
 	h5 {
@@ -2746,14 +2750,49 @@
 			display: inline-block;
 			font-weight: 600;
 			height: inherit;
-			left: 70px;
+			left: 0px;
 			line-height: inherit;
 			margin: 0;
 			padding: 0;
 			position: absolute;
 			top: 0;
 			font-size: 1em;
+			max-width: 100px;
+			border-bottom-style: hidden;
 		}
+
+		#header .logo2 {
+			color: #ffffff;
+			display: inline-block;
+			font-weight: 600;
+			height: inherit;
+			right: 30px;
+			line-height: inherit;
+			margin: 0;
+			padding: 0;
+			position: absolute;
+			top: 0;
+			font-size: 1em;
+			max-width: 100px;
+			border-bottom-style: hidden;
+		}
+
+		//sm
+		@media screen and (min-width:768px){
+			#header .logo2 {
+				right: 0px;
+			}
+			#header #nav {
+				padding-right: 210px;
+			}
+		}
+		//md
+		@media screen and (min-width:992px){
+			#header #nav {
+				padding-right: 180px;
+			}
+		}
+
 
 		#header a {
 			-moz-transition: color 0.2s ease-in-out;
@@ -2768,13 +2807,18 @@
 		}
 
 			#header a:hover {
-				color: #ffffff;
+				color: white;
 				border-bottom: #1999B8 solid 4px;
+				/*width: 6.5em;*/
+
+
 			}
 
 			#header a:last-child {
 				padding-right: 0;
 			}
+
+
 
 			#header a.navPanelToggle {
 				display: none;
@@ -2945,7 +2989,7 @@
 	}
 
 		#banner h1 {
-			font-size: 52px;
+			font-size: 36px;
 			font-weight: 70;
 			color: #fff;
 			line-height: 1em;
@@ -2956,11 +3000,25 @@
 		#banner h3 {
 			color:white;
 			font-weight: 300;
+			font-size: 20px;
 		}
 
 		//lg
 		@media screen and (min-width:1200px){
 			#banner .pic {
+				padding-top: 30px;
+			}
+
+			#banner .center-block {
+				padding-top: 30px;
+			}
+		}
+
+
+		//sm
+		@media screen and (min-width:768px){
+
+			#banner .center-block {
 				padding-top: 30px;
 			}
 		}
@@ -2979,6 +3037,11 @@
 				font-size: 20px;
 				line-height: 5px;
 			}
+
+			#banner .center-block {
+				padding-top: 30px;
+			}
+
 		}
 
 		#banner p {
@@ -2993,12 +3056,20 @@
 				background-attachment: scroll;
 			}
 
-		}
+			#banner .center-block {
+				padding-top: 30px;
+			}
 
+		}
+		//md
 		@media screen and (max-width: 1280px) {
 
 			#banner {
 				padding: 10em 2em 8em 2em;
+			}
+
+			#banner .center-block {
+				padding-top: 30px;
 			}
 
 		}
@@ -3009,8 +3080,12 @@
 				background-attachment: scroll;
 			}
 
-		}
+			#banner .center-block {
+				padding-top: 30px;
+			}
 
+		}
+		//xs
 		@media screen and (max-width: 736px) {
 
 			#banner {
@@ -3018,7 +3093,16 @@
 			}
 
 				#banner h1 {
-					font-size: 2.5em;
+					font-size: 18px;
+					padding-top: 30px;
+				}
+
+				#banner h3 {
+					font-size: 14px;
+				}
+
+				#banner .center-block {
+					padding-top: 30px;
 				}
 
 				#banner p {
@@ -3026,7 +3110,7 @@
 				}
 
 		}
-
+		//xxs
 		@media screen and (max-width: 480px) {
 
 			#banner {
