@@ -214,6 +214,7 @@
     color: #409FB2;
     font-weight: 800;
     font-size: 36px;
+    padding-bottom: 1em;
   }
   #four h2 {
     letter-spacing: 1px;
@@ -221,7 +222,13 @@
     font-weight: 400;
     text-align: center;
     line-height: 1.2em;
+    padding-top: 10px;
   }
+
+  #four .header {
+    padding-bottom: 2em;
+  }
+
   #four .img-responsive {
     max-width: 250px;
   }
@@ -232,6 +239,16 @@
   }
   #four .pic .img-responsive {
     width: 100%;
+  }
+}
+
+//sm
+@media screen and (min-width:768px){
+  #four p {
+    padding-bottom: 0.7em;
+  }
+  #fout h2 {
+    padding-bottom: 1em;
   }
 }
 
@@ -247,6 +264,10 @@
     font-size: 1.5em;
     font-weight: 300;
     text-align: justify;
+  }
+
+  #four .header {
+    padding-bottom: 15px;
   }
 
   #four .container-fluid {
