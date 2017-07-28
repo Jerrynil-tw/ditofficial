@@ -55,7 +55,7 @@
 
 #two {
 
-  background-color: #F2FAFD;
+  background-color: #FFFFFF;
   background-size: 100% 100%;
   background-position: top;
   background-attachment: scroll;
@@ -169,7 +169,7 @@
 
 #four {
 
-  background-color: #F0F9FD;
+  background-color: #FFFFFF;
   background-size: 100% 100%;
   background-position: top;
   background-attachment: scroll;
@@ -231,5 +231,116 @@
   #four .pic .img-responsive {
     width: 100%;
   }
+}
+
+#five {
+
+  background-color: #EBF4F9;
+  background-size: 100% 100%;
+  background-position: top;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  text-align: center;
+  /*border-top: 0.5em solid #5385c1;*/
+}
+
+#five .thumbnail {
+  background-color: #EBF4F9;
+  border-style: none;
+}
+
+#five p {
+
+}
+
+
+//md
+@media screen and (min-width:768px){
+  #five p {
+      color: #409FB2;
+      letter-spacing: 3px;
+      font-weight: 800;
+      font-size: 36px;
+  }
+  #five h2 {
+    min-width: 10px;
+    border-bottom: #1999B8 solid 4px;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.2em;
+    padding-bottom: 6px;
+  }
+
+  #five h4 {
+    line-height: 30px;
+    padding-top: 15px;
+    text-align: center;
+  }
+
+  #five .header {
+    min-width: 30px;
+  }
+
+  #five .img-responsive {
+    max-width: 250px;
+  }
+
+  #five .description {
+    padding-top: 3em;
+    padding-bottom: 5em;
+  }
+
+  #five .pic {
+    padding: 1em 1em;
+  }
+
+  #five .thunbnail {
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+
+
+}
+//sm
+@media screen and (min-width:768px){
+
+  #five .description {
+    text-align: justify;
+    padding-top: 0;
+  }
+  #five .center-big {
+    padding-top: 45px;
+  }
+}
+
+//xs
+@media screen and (max-width:767px){
+  #five p {
+      color: #409FB2;
+      font-weight: 700;
+      font-size: 2.3em;
+  }
+  #five h2 {
+    letter-spacing: 1px;
+    font-size: 1.5em;
+    font-weight: 300;
+    text-align: justify;
+  }
+
+
+
+  #five .thumbnail {
+    padding: 10px;
+    margin-bottom: 40px;
+  }
+
+  #five .thumbnail {
+    width: 100%;
+  }
+
+
 }
 
