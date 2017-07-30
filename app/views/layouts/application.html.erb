@@ -27,7 +27,11 @@
       <%= render 'shared/side_header' %>
     <% end %>
     <%= yield %>
-    <%= render 'shared/footer' %>
+    <% if controller.action_name == "index"%>
+      <%= render 'shared/footer' %>
+    <% else %>
+      <%= render 'shared/side_footer' %>
+    <% end %>
 
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/skel.min.js"></script>
