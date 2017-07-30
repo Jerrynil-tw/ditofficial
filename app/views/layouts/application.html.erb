@@ -21,8 +21,11 @@
     <![endif]-->
   </head>
   <body>
-
-    <%= render 'shared/header' %>
+    <% if controller.action_name == "index"%>
+      <%= render 'shared/header' %>
+    <% else %>
+      <%= render 'shared/side_header' %>
+    <% end %>
     <%= yield %>
     <%= render 'shared/footer' %>
 
