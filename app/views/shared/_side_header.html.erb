@@ -38,12 +38,13 @@
 
 <!-- Banner -->
   <section id="banner">
-    <div class="container-fluid pic" >
-      <%= image_tag("LOGO_long.png", class: "img-responsive col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2",)%>
-    </div>
-    <h1 style="font-weight: 500">台灣第一個鎖定娛樂科技的種子加速器</h1>
-    <h3>第二梯次熱烈招募中！</h3>
-    <h3>報名截止：2017/09/15</h3>
+    <% if controller.action_name == "plan" %>
+      <h1 style="font-weight: 500">加速計畫</h1>
+    <% elsif controller.action_name == "mentor" %>
+      <h1 style="font-weight: 500">導師陣容</h1>
+    <% elsif controller.action_name == "team" %>
+      <h1 style="font-weight: 500">新創團隊</h1>
+    <% end %>
     <div class="container-fluid">
       <a class="img-responsive center-block" href="index.html" ><%= image_tag("index/join.png", style: "max-width: 140px;") %></a>
     </div>
