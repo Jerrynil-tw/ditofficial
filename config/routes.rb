@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get '/plan', to: 'pages#plan'
   get '/procedure', to: 'pages#procedure'
   get '/target', to: 'pages#target'
+  get '/notice', to: 'pages#notice'
   get '/mentor', to: 'pages#mentor'
   get '/team', to: 'pages#team'
   get '/home', to: 'pages#home'

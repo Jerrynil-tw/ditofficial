@@ -17,6 +17,9 @@ class PagesController < ApplicationController
   def target
   end
 
+  def notice
+  end
+
   def team
   end
 end
