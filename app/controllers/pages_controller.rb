@@ -11,6 +11,9 @@ class PagesController < ApplicationController
   def plan
   end
 
+  def procedure
+  end
+
   def team
   end
 end

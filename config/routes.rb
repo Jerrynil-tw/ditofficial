@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root 'pages#index'
 
   get '/plan', to: 'pages#plan'
+  get '/procedure', to: 'pages#procedure'
   get '/mentor', to: 'pages#mentor'
   get '/team', to: 'pages#team'
   get '/home', to: 'pages#home'

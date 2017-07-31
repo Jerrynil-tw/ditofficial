@@ -2,6 +2,9 @@
   #banner {
     background-image: url('<%= asset_path("Banner_3.jpg") %>');
   }
+  #banner h1 {
+    font-size: 72px;
+  }
 </style>
 <!-- Header -->
   <header id="header">
@@ -39,6 +42,8 @@
 <!-- Banner -->
   <section id="banner">
     <% if controller.action_name == "plan" %>
+      <h1 style="font-weight: 500">加速計畫</h1>
+    <% elsif controller.action_name == "procedure" %>
       <h1 style="font-weight: 500">加速計畫</h1>
     <% elsif controller.action_name == "mentor" %>
       <h1 style="font-weight: 500">導師陣容</h1>
