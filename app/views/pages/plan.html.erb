@@ -1,0 +1,89 @@
+<style type="text/css">
+  .container {
+    overflow-x: hidden;
+    padding-top: 70px;
+    padding-bottom: 30px;
+  }
+
+  .list-group {
+    width: 130px;
+    margin-top: -50px;
+    border-radius: 0;
+  }
+
+  .list-group a {
+    text-align: center;
+    font-size: 25px;
+    line-height: 10px;
+    padding-top: 60px;
+
+  }
+  .list-group a:hover {
+    border-bottom: #1999B8 solid 4px;
+    background-color: white;
+  }
+
+  .list-group-item {
+    border-style: hidden;
+  }
+
+  .row-offcanvas h3 {
+    font-size:20px;
+    font-weight: 300;
+    text-align: justify;
+    line-height: 40px;
+  }
+
+  .row-offcanvas p {
+    font-size:20px;
+    margin-left: 40px;
+    text-indent: -18px;
+    padding-top: 15px;
+    line-height: 30px;
+  }
+
+  #plan_one .container {
+    margin-top: -40px;
+  }
+
+</style>
+
+<div class="container">
+  <div class="row row-offcanvas row-offcanvas-right">
+    <div class="col-xs-6 col-md-2 sidebar-offcanvas" id="sidebar">
+      <div class="list-group">
+        <a href="#" class="list-group-item">計畫總覽</a>
+        <a href="#" class="list-group-item">投資方案</a>
+        <a href="#" class="list-group-item">投資標的</a>
+        <a href="#" class="list-group-item">甄選流程</a>
+        <a href="#" class="list-group-item">重要須知</a>
+      </div>
+    </div><!--/.sidebar-offcanvas-->
+    <div class="col-xs-12 col-md-9">
+      <p class="pull-right visible-xs">
+        <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+      </p>
+      <div class="pic">
+        <%= image_tag("plan/plan.jpg", class: "img-responsive center-block") %>
+      </div>
+      <div id="plan_one">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-md-9">
+              <h3>自2014 年成立以來，創夢市集輔導超過 30 個創業團隊，協助他們取得必要資源。為加速台灣娛樂領域的科技新創生態發展，創夢市集於 2017 年 2 月推出創夢實驗室，專注於領投種子輪，並從中發掘高成長標的，聯合六大股東進行後續天使輪的投資。</h3>
+              <h3>
+                創夢實驗室針對娛樂領域的科技新創公司，提供早期投資、導師網絡等資源，其規劃採梯次制，一年兩梯、每一梯入選 6 隊。入選團隊必須加入為期 12 週的加速計畫，內容包括：
+              </h3>
+              <p>● 12 週的培訓課程：每一梯次的課程內容都不同，針對當梯次入選團隊的屬性量身打造。（必須參加）</p>
+              <p>● 閉門募資簡報：我們提供直接面對六家娛樂及投資業者高層進行募資簡報的機會。活動採閉門邀請制，並非一般的開放式演出活動。（必須參加）</p>
+              <p>● 創業導師網絡：我們聚集了第一流的創業導師，以及來自創夢市集企業股東內的高階主管。</p>
+              <p>● 創業家之夜：我們定期邀請創業家、領域專家前來分享心路歷程與新知，並在寬敞舒適的環境中自由交流。</p>
+              <h3>創夢實驗室採分段式投資，第一期投資所有入選團隊30 萬元；第二期投資根據加速計畫期間的評估結果，決定是否追加 100 萬元。</h3>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!--/.col-xs-12.col-sm-9-->
+  </div><!--/row-->
+</div><!--/.container-->

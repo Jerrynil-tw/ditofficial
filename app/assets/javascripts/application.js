@@ -18,4 +18,5 @@
 //= require main
 //= require skel.min
 //= require util
+//= require offcanvas
 //= require_tree .
