@@ -22,13 +22,7 @@
 #quote-carousel .carousel-control.right {
     right: -60px;
 }
-#quote-carousel .carousel-indicators {
-    right: 50%;
-    /*top: auto;*/
-    bottom: 0px;
-    margin-right: -19px;
-    margin-top: 130px;
-}
+
 #quote-carousel .carousel-indicators li {
     width: 63px;
     height: 63px;
@@ -73,13 +67,131 @@
   text-align: justify;
 }
 
-@media screen and (max-width:767px){
-  #quote-carousel .carousel-indicators li {
-    border-style: hidden;
+#carousel {
+  background-color: #E4F0F7;
+}
+
+//lg
+@media screen and (min-width:1200px){
+  #quote-carousel .carousel-indicators .active {
+      width: 300px;
+      height: 300px;
+      border-radius: 0;
+  }
+}
+
+//md
+@media screen and (min-width:992px){
+  #quote-carousel .carousel-indicators {
+      right: 50%;
+      /*top: auto;*/
+      bottom: 75px;
+      margin-right: -19px;
+      margin-top: 130px;
   }
 
   #quote-carousel .carousel-indicators .active {
+      width: 300px;
+      height: 300px;
+      border-radius: 0;
+  }
+
+  #carousel {
+    height: 650px;
+  }
+  #carousel .container {
+    padding-top: 180px;
+  }
+
+  #carousel p {
+    text-indent: -28px
+  }
+
+  #carousel h2 {
+    float: right;
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  #quote-carousel {
+    padding-top: 10px;
+    padding-bottom: 220px;
+  }
+}
+
+//sm
+@media screen and (min-width:768px){
+  #quote-carousel {
+    padding-bottom: 260px;
+  }
+  #carousel {
+    height: 650px;
+  }
+  #carousel .container {
+    padding: 80px 0;
+  }
+  #quote-carousel .carousel-indicators .active {
+      width: 200px;
+      height: 200px;
+  }
+  #carousel h2 {
+    float: right;
+    font-size: 20px;
+    font-weight: 300;
+  }
+}
+
+//xs
+@media screen and (max-width:767px){
+  #quote-carousel {
+    padding-bottom: 160px;
+  }
+  #carousel {
+    height: 500px;
+  }
+
+  #carousel .container {
+    padding-top: 80px;
+  }
+
+  #carousel p {
+    font-size: 16px;
+    text-indent: -19px
+  }
+
+  #carousel h2 {
+    float: right;
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  #quote-carousel .carousel-indicators {
+      /*left: 0;*/
+      /*top: auto;*/
+      /*bottom: 0px;*/
+      margin-left: -310px;
+      margin-bottom: 50px;
+      /*margin-top: 50px;*/
+      width: 600px;
+  }
+
+  #quote-carousel .carousel-indicators .active {
+    width: 150px;
+    height: 150px;
     border-style: hidden;
   }
+
+  #quote-carousel .carousel-indicators li {
+    width: 45px;
+    height: 45px;
+    border-style: hidden;
+  }
+
+  #quote-carousel .carousel-control {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+
 }
 
