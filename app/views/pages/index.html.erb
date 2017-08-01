@@ -199,60 +199,70 @@
 		</div>
 	</section>
 <!-- Three -->
-<section id="three">
-	<div id="carousel-id" class="carousel slide" data-ride="carousel">
-	    <!-- 幻燈片小圓點區 -->
-	    <ol class="carousel-indicators">
-	        <li data-target="#carousel-id" data-slide-to="0" class=""></li>
-	        <li data-target="#carousel-id" data-slide-to="1" class=""></li>
-	        <li data-target="#carousel-id" data-slide-to="2" class="active"></li>
-	    </ol>
-	    <!-- 幻燈片主圖區 -->
-	    <div class="carousel-inner">
-	        <div class="item">
-	            <%= image_tag("index/sick3.jpg", class: "first-slide") %>
-	            <div class="col-xs-8 col-xs-offset-4">
-	            	<div class="container">
-	            	    <div class="carousel-caption">
-	            	        <h3 class="visible-xs" style="color: black; font-size: 20px;">第一梯次亮點團隊</h3>
-	            	        <h1 class="hidden-xs" style="color: black;">第一梯次亮點團隊</h1>
-	            	        <h1 class="hidden-xs hidden-sm" style="color: black;">有病製作</h1>
-	            	        <p class="hidden-xs" style="color: black;">你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？</p>
-	            	    </div>
-	            	</div>
-	            </div>
-	        </div>
-	        <div class="item">
-	            <%= image_tag("index/island3.jpg", class: "second-slide") %>
-	            <div class="col-xs-8 col-xs-offset-4">
-	            	<div class="container">
-	            	    <div class="carousel-caption">
-	            	        <h3 class="visible-xs" style="color: black; font-size: 20px;">第一梯次亮點團隊</h3>
-	            	        <h1 class="hidden-xs" style="color: black;">第一梯次亮點團隊</h1>
-	            	        <h1 class="hidden-xs hidden-sm" style="color: black;">小島動畫</h1>
-	            	        <p class="hidden-xs" style="color: black;">你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？</p>
-	            	    </div>
-	            	</div>
-	            </div>
-	        </div>
-	        <div class="item active">
-	            <%= image_tag("index/work3.jpg", class: "third-slide") %>
-	            <div class="col-xs-8 col-xs-offset-4">
-	            	<div class="container">
-	            	    <div class="carousel-caption">
-	            	        <h3 class="visible-xs" style="color: black; font-size: 20px;">第一梯次亮點團隊</h3>
-	            	        <h1 class="hidden-xs" style="color: black;">第一梯次亮點團隊</h1>
-	            	        <h1 class="hidden-xs hidden-sm" style="color: black;">上班不要看</h1>
-	            	        <p class="hidden-xs" style="color: black;">你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？你喝過了嗎？</p>
-	            	    </div>
-	            	</div>
-	            </div>
-	        </div>
-	    </div>
-	    <!-- 上下頁控制區 -->
-	    <a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-	    <a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-	</div>
+<section style="background-color: #E4F0F7; height: 650px;">
+<head>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+</head>
+
+<div class="container" style="padding-top: 80px;">
+	<div class="row">
+    <div class="col-md-12" data-wow-delay="0.2s">
+      <div class="carousel slide" data-ride="carousel" id="quote-carousel" style="padding-bottom: 220px;">
+        <!-- Bottom Carousel Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#quote-carousel" data-slide-to="0" class="active"><%= image_tag("index/sick.png", class: "img-responsive") %>
+          </li>
+          <li data-target="#quote-carousel" data-slide-to="1"><%= image_tag("index/work.png", class: "img-responsive") %>
+          </li>
+          <li data-target="#quote-carousel" data-slide-to="2"><%= image_tag("index/island.jpg", class: "img-responsive") %>
+          </li>
+        </ol>
+
+        <!-- Carousel Slides / Quotes -->
+        <div class="carousel-inner text-center">
+
+          <!-- Quote 1 -->
+          <div class="item active">
+            <blockquote>
+              <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                  <p> 如果說，創業就像在汪洋中尋找寶藏，那在我加入創夢實驗室之前，我只是一位望洋興嘆的路人。這些日子來，創夢沒有給我船的鑰匙，但給了我打造這艘船的工具，它們沒有告訴我寶藏在哪，但我得到了許多智慧與知識。</p>
+                  <h2 style="float: right; font-size: 20px; font-weight: 300;">──有病製作創辦人</h5>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+          <!-- Quote 2 -->
+          <div class="item">
+            <blockquote>
+              <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                  <p>雖然地點很遠，但是熱情很近，創夢市集的團隊不斷地帶著所有成員一起闖關，體驗難以取代。如果你剛剛踏進新創的門前，多多和創夢市集的團隊交流，參與活動，夥伴與導師都會給你更多的力量。</p>
+                  <h2 style="float: right; font-size: 20px; font-weight: 300;">陸伍伍參伍創辦人</h2>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+          <!-- Quote 3 -->
+          <div class="item">
+            <blockquote>
+              <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                  <p>做創作的人往往過於理想，所以容易忽略策略、財務、分析等與創業至關重要的事。感謝創夢市集提供我們很多在創業初期無法接觸到的資源，也給予我們很多寶貴的建議。</p>
+                  <h2 style="float: right; font-size: 20px; font-weight: 300;">小島動畫創辦人</h2>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+        </div>
+
+        <!-- Carousel Buttons Next/Prev -->
+        <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+        <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
 </section>
 
 <!-- Four -->

@@ -1,4 +1,85 @@
+/* Carousel */
+
+#quote-carousel {
+    padding: 0 10px 30px 10px;
+    margin-top: -20px;
+    /* Control buttons  */
+    /* Previous button  */
+    /* Next button  */
+    /* Changes the position of the indicators */
+    /* Changes the color of the indicators */
+}
+#quote-carousel .carousel-control {
+    background: none;
+    color: #CACACA;
+    font-size: 2.3em;
+    text-shadow: none;
+    margin-top: 30px;
+}
+#quote-carousel .carousel-control.left {
+    left: -60px;
+}
+#quote-carousel .carousel-control.right {
+    right: -60px;
+}
+#quote-carousel .carousel-indicators {
+    right: 50%;
+    /*top: auto;*/
+    bottom: 0px;
+    margin-right: -19px;
+    margin-top: 130px;
+}
+#quote-carousel .carousel-indicators li {
+    width: 63px;
+    height: 63px;
+    margin: 5px;
+    cursor: pointer;
+    /*border: 4px solid #CCC;*/
+    border-radius: 0;
+    /*opacity: 1;*/
+    overflow: hidden;
+    transition: all 0.4s;
+    background: #E4F0F7;
+}
 
 
+#quote-carousel .carousel-indicators .active {
+    background: #E4F0F7;
+    width: 250px;
+    height: 250px;
+    border-radius: 0;
+    /*border-color: #f33;*/
+    /*opacity: 1;*/
+    overflow: hidden;
+}
+.carousel-inner {
+    min-height: 300px;
+}
+.item blockquote {
+    border-left: none;
+    margin: 0;
+}
+.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+   /* float: left;
+    margin-right: 10px;*/
+}
 
+.item blockquote p {
+  /*font-family: 'Fontawesome';*/
+  /*content: "\f10d";*/
+  font-size: 24px;
+  text-align: justify;
+}
+
+@media screen and (max-width:767px){
+  #quote-carousel .carousel-indicators li {
+    border-style: hidden;
+  }
+
+  #quote-carousel .carousel-indicators .active {
+    border-style: hidden;
+  }
+}
 
