@@ -1,6 +1,6 @@
 <style type="text/css">
   #header .navbar-header a {
-    padding-top: 5px;
+    padding-top: 3px;
   }
 
   /* Dropdown Button */
@@ -31,18 +31,19 @@
       display: none;
       position: absolute;
       background-color: #1D1D1D;
-      min-width: 100px;
+      width: 900px;
       /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
       z-index: 1;
       /*padding-bottom: 10px;*/
-      margin-left: 18px;
-      opacity: 0.8;
+      margin-left: -100px;
+      padding-left: 111px;
+      opacity: 0.9;
   }
 
   /* Links inside the dropdown */
   .dropdown-content a {
       color: black;
-      /*padding: 12px 16px;*/
+      margin-right: 4px;
       text-decoration: none;
       display: block;
       /*font-size: 14px;*/
@@ -51,7 +52,7 @@
 
   #myDropdown a {
     font-size: 16px;
-    padding: 0 5px;
+    padding: 0 4px;
   }
   /* Change color of dropdown links on hover */
   /*.dropdown-content a:hover {background-color: #f1f1f1}*/
@@ -91,8 +92,8 @@
 
               <!-- xs -->
               <div class="visible-xs">
-                <a href="https://ditlabs.tw"><i class="glyphicon glyphicon-home"></i></a>
-                <div class="dropdown">
+                <a href="https://ditlabs.tw" style="margin: 0 8px; margin-top: -8px;"><i class="glyphicon glyphicon-home"></i></a>
+                <div class="dropdown" style="margin-top: -9px;">
                   <button onclick="myFunction()" class="dropbtn">加速計畫</button>
                   <div id="myDropdown" class="dropdown-content">
                     <a href="https://ditlabs.tw/plan">計畫總覽</a>
@@ -101,8 +102,8 @@
                     <a href="https://ditlabs.tw/notice">重要須知</a>
                   </div>
                 </div>
-                <a href="https://ditlabs.tw/mentor">導師陣容</a>
-                <a href="https://ditlabs.tw/team">梯次團隊</a>
+                <a href="https://ditlabs.tw/mentor" style="margin-top: -9px;">導師陣容</a>
+                <a href="https://ditlabs.tw/team" style="margin-top: -9px;">梯次團隊</a>
               </div>
 
             <a class="logo4 img-responsive hidden-sm hidden-xs" href="https://goo.gl/forms/vKxVy6VMqMPVopmo1" ><%= image_tag("index/join.png", style: "max-width: 140px; border-bottom-style: none;", class: "logo4") %></a>
