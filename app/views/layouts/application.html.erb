@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html ng-app="Ditblog" prefix='og: http://ogp.me/ns#' lang="zh">
   <head>
 
     <%= favicon_link_tag 'ditlabs_favicon.png', type: 'image/png' %>
@@ -22,7 +22,7 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <meta property="og:description" content="我們提供娛樂科技新創團隊最高 130 萬元的種子投資，以及六大企業資源的對接管道。"></meta>
+    <%= yield :head %>
   </head>
   <body>
     <% if controller.action_name == "index"%>
