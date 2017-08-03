@@ -61,6 +61,11 @@
   }
 
 </style>
+<% content_for :head do %>
+    <meta property="og:url" content="https://ditlabs.tw/" />
+    <meta property="og:image" content=<%= url_to_image("meta_banner.png") %> />
+    <meta property="og:description" content="我們提供娛樂科技新創團隊最高 130 萬元的種子投資，以及六大企業資源的對接管道。" />
+<% end %>
 
 <div id="plan_one">
   <div class="container sourcehansans-tc-regular">
