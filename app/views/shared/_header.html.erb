@@ -82,58 +82,67 @@
 </style>
 
 <!-- Banner 的原生 Header -->
-  <header id="header">
-    <div class="col-md-10 col-md-offset-1">
-      <a class="logo hidden-sm hidden-xs" href="https://ditlabs.tw" ><%= image_tag("index/main_logo.png", style: "max-width: 100px; border-bottom-style: hidden;", class: "logo") %></a>
-      <nav id="nav">
-        <div class="navlist sourcehansans-tc-regular">
-          <a href="https://ditlabs.tw/plan">加速計畫</a>
-          <a href="https://ditlabs.tw/mentor">導師陣容</a>
-          <a href="https://ditlabs.tw/team">梯次團隊</a>
-        </div>
-        <!-- <a href="elements.html">Blog</a> -->
-        <a class="logo2 img-responsive hidden-sm" href="https://goo.gl/forms/vKxVy6VMqMPVopmo1" target="_blank"><%= image_tag("index/join.png", style: "max-width: 140px; border-bottom-style: none;", class: "logo2") %></a>
-
-      </nav>
-      <!-- <a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a> -->
-    </div>
-
-    <!-- 滑出式 navbar -->
-    <nav class="navbar navbar-inverse navbar-fixed-top sourcehansans-tc-regular" role="navigation">
-      <div class="col-md-10 col-md-offset-1">
-        <div class="row">
-          <div class="navbar-header navbar-right">
-            <a class="logo3 hidden-xs" href="https://ditlabs.tw" ><%= image_tag("index/main_logo.png", style: "max-width: 100px; border-bottom-style: hidden; margin-top: 6px;", class: "logo3") %></a>
-            <!-- md -->
-            <div class="hidden-xs">
-              <a class="navbar-text" href="https://ditlabs.tw/plan">加速計畫</a>
-              <a class="navbar-text" href="https://ditlabs.tw/mentor">導師陣容</a>
-              <a class="navbar-text" href="https://ditlabs.tw/team">梯次團隊</a>
-            </div>
-
-            <!-- xs -->
-            <div class="visible-xs">
-              <a href="https://ditlabs.tw" style="padding-bottom: 8px; margin-left: 9px; margin-right: 2px;"><i class="glyphicon glyphicon-home"></i></a>
-              <div class="dropdown" style="margin-right: -9px;">
-                <button onclick="myFunction()" class="dropbtn">加速計畫</button>
-                <div id="myDropdown" class="dropdown-content">
-                  <a href="https://ditlabs.tw/plan">計畫總覽</a>
-                  <a href="https://ditlabs.tw/procedure">投資流程</a>
-                  <a href="https://ditlabs.tw/target">投資標的</a>
-                  <a href="https://ditlabs.tw/notice">重要須知</a>
-                </div>
-              </div>
-              <a href="https://ditlabs.tw/mentor" style="margin-right: -9px;">導師陣容</a>
-              <a href="https://ditlabs.tw/team">梯次團隊</a>
-            </div>
-            <a class="logo4 img-responsive hidden-sm hidden-xs" href="https://goo.gl/forms/vKxVy6VMqMPVopmo1" target="_blank"><%= image_tag("index/join.png", style: "max-width: 140px; border-bottom-style: none;", class: "logo4") %>
-            </a>
-          </div>
-        </div>
-      </div><!-- /.container-fluid -->
+<header id="header">
+  <div class="col-md-10 col-md-offset-1">
+    <a class="logo hidden-sm hidden-xs" href="https://ditlabs.tw" ><%= image_tag("index/main_logo.png", style: "max-width: 100px; border-bottom-style: hidden;", class: "logo") %></a>
+    <nav id="nav">
+      <div class="navlist sourcehansans-tc-regular">
+        <a href="https://ditlabs.tw/plan">加速計畫</a>
+        <a href="https://ditlabs.tw/mentor">導師陣容</a>
+        <a href="https://ditlabs.tw/team">梯次團隊</a>
+      </div>
+      <!-- <a href="elements.html">Blog</a> -->
+      <a class="logo2 img-responsive hidden-sm" href="https://goo.gl/forms/vKxVy6VMqMPVopmo1" target="_blank"><%= image_tag("index/join.png", style: "max-width: 140px; border-bottom-style: none;", class: "logo2") %>
+      </a>
     </nav>
+  </div>
 
-  </header>
+  <!--sm 以上 滑出式 navbar -->
+  <nav class="hidden-xs bar navbar navbar-inverse navbar-fixed-top sourcehansans-tc-regular" role="navigation">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="row">
+        <div class="navbar-header navbar-right">
+          <a class="logo3 hidden-xs" href="https://ditlabs.tw" ><%= image_tag("index/main_logo.png", style: "max-width: 100px; border-bottom-style: hidden; margin-top: 6px;", class: "logo3") %></a>
+          <!-- md -->
+          <div class="hidden-xs">
+            <a class="navbar-text" href="https://ditlabs.tw/plan">加速計畫</a>
+            <a class="navbar-text" href="https://ditlabs.tw/mentor">導師陣容</a>
+            <a class="navbar-text" href="https://ditlabs.tw/team">梯次團隊</a>
+          </div>
+          <a class="logo4 img-responsive hidden-sm hidden-xs" href="https://goo.gl/forms/vKxVy6VMqMPVopmo1" target="_blank"><%= image_tag("index/join.png", style: "max-width: 140px; border-bottom-style: none;", class: "logo4") %>
+          </a>
+        </div>
+      </div>
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <!--xs 滑出式 navbar -->
+  <nav class="visible-xs navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="row">
+        <div class="navbar-header navbar-right">
+          <!-- xs -->
+          <div class="visible-xs">
+            <a href="https://ditlabs.tw" style="padding-bottom: 8px; margin-left: 9px; margin-right: 2px;"><i class="glyphicon glyphicon-home"></i></a>
+            <div class="dropdown" style="margin-right: -9px;">
+              <button onclick="myFunction()" class="dropbtn">加速計畫</button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="https://ditlabs.tw/plan">計畫總覽</a>
+                <a href="https://ditlabs.tw/procedure">投資流程</a>
+                <a href="https://ditlabs.tw/target">投資標的</a>
+                <a href="https://ditlabs.tw/notice">重要須知</a>
+              </div>
+            </div>
+            <a href="https://ditlabs.tw/mentor" style="margin-right: -9px;">導師陣容</a>
+            <a href="https://ditlabs.tw/team">梯次團隊</a>
+          </div>
+          <a class="logo4 img-responsive hidden-sm hidden-xs" href="https://goo.gl/forms/vKxVy6VMqMPVopmo1" target="_blank"><%= image_tag("index/join.png", style: "max-width: 140px; border-bottom-style: none;", class: "logo4") %>
+          </a>
+        </div>
+      </div>
+    </div><!-- /.container-fluid -->
+  </nav>
+</header>
 
 <!-- Banner -->
   <section id="banner">
