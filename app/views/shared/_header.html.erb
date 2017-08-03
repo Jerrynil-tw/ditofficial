@@ -163,16 +163,16 @@
       $(document).ready(function(){
 
       // hide .navbar first
-      $(".navbar").hide();
+      $(".bar").hide();
 
       // fade in .navbar
       $(function () {
         $(window).scroll(function () {
                 // set distance user needs to scroll before we fadeIn navbar
           if ($(this).scrollTop() > 60) {
-            $('.navbar').fadeIn();
+            $('.bar').fadeIn();
           } else {
-            $('.navbar').fadeOut();
+            $('.bar').fadeOut();
           }
         });
 
