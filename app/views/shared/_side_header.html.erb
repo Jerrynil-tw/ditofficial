@@ -1,20 +1,25 @@
 <style type="text/css">
   #banner {
     background-image: url('<%= asset_path("Banner_final.jpg") %>');
-    font-family: "sourcehansans-tc", Helvetica, Arial, helvetica, 'cwTeXHei', "sourcehansans-tc", "微軟正黑體", "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", /*serif, */"LiHei Pro", "Microsoft JhengHei";
-    font-weight: "400";
   }
   #banner h1 {
     font-size: 48px;
   }
 
-  #header {
+  #nav .navlist {
     font-family: "sourcehansans-tc", Helvetica, Arial, helvetica, 'cwTeXHei', "sourcehansans-tc", "微軟正黑體", "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", /*serif, */"LiHei Pro", "Microsoft JhengHei";
-    font-weight: "400";
+  }
+
+  .navbar {
+    font-family: "sourcehansans-tc", Helvetica, Arial, helvetica, 'cwTeXHei', "sourcehansans-tc", "微軟正黑體", "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", /*serif, */"LiHei Pro", "Microsoft JhengHei";
   }
 
   #header .navbar-header a {
     padding-top: 5px;
+  }
+
+  #banner .text {
+    font-family: "sourcehansans-tc", Helvetica, Arial, helvetica, 'cwTeXHei', "sourcehansans-tc", "微軟正黑體", "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", /*serif, */"LiHei Pro", "Microsoft JhengHei";
   }
   /*xs*/
   @media screen and (max-width:767px){
@@ -82,13 +87,15 @@
   .show {display:block;}
 </style>
 <!-- Banner 的原生 Header -->
-<header id="header sourcehansans-tc-regular">
+<header id="header">
   <div class="col-md-10 col-md-offset-1">
     <a class="logo hidden-sm" href="https://ditlabs.tw" ><%= image_tag("index/main_logo.png", style: "max-width: 100px; border-bottom-style: hidden;", class: "logo") %></a>
     <nav id="nav">
-      <a href="https://ditlabs.tw/plan">加速計畫</a>
-      <a href="https://ditlabs.tw/mentor">導師陣容</a>
-      <a href="https://ditlabs.tw/team">梯次團隊</a>
+      <div class="navlist sourcehansans-tc-regular">
+        <a href="https://ditlabs.tw/plan">加速計畫</a>
+        <a href="https://ditlabs.tw/mentor">導師陣容</a>
+        <a href="https://ditlabs.tw/team">梯次團隊</a>
+      </div>
       <!-- <a href="elements.html">Blog</a> -->
       <a class="logo2 img-responsive hidden-sm" href="https://goo.gl/forms/vKxVy6VMqMPVopmo1" target="_blank"><%= image_tag("index/join.png", style: "max-width: 140px; border-bottom-style: none;", class: "logo2") %></a>
 
@@ -97,7 +104,7 @@
   </div>
 
   <!-- 滑出式 navbar -->
-  <nav class="navbar navbar-inverse navbar-fixed-top " role="navigation">
+  <nav class="navbar navbar-inverse navbar-fixed-top sourcehansans-tc-regular" role="navigation">
     <div class="col-md-10 col-md-offset-1">
       <div class="row">
         <div class="navbar-header navbar-right">
@@ -133,20 +140,22 @@
 </header>
 
 <!-- Banner -->
-  <section id="banner sourcehansans-tc-regular">
-    <% if controller.action_name == "plan" %>
-      <h1 style="font-weight: 500">加速計畫</h1>
-    <% elsif controller.action_name == "procedure" %>
-      <h1 style="font-weight: 500">加速計畫</h1>
-    <% elsif controller.action_name == "target" %>
-      <h1 style="font-weight: 500">加速計畫</h1>
-    <% elsif controller.action_name == "notice" %>
-      <h1 style="font-weight: 500">加速計畫</h1>
-    <% elsif controller.action_name == "mentor" %>
-      <h1 style="font-weight: 500">導師陣容</h1>
-    <% elsif controller.action_name == "team" %>
-      <h1 style="font-weight: 500">梯次團隊</h1>
-    <% end %>
+  <section id="banner">
+    <div class="text sourcehansans-tc-regular">
+      <% if controller.action_name == "plan" %>
+        <h1 style="font-weight: 500">加速計畫</h1>
+      <% elsif controller.action_name == "procedure" %>
+        <h1 style="font-weight: 500">加速計畫</h1>
+      <% elsif controller.action_name == "target" %>
+        <h1 style="font-weight: 500">加速計畫</h1>
+      <% elsif controller.action_name == "notice" %>
+        <h1 style="font-weight: 500">加速計畫</h1>
+      <% elsif controller.action_name == "mentor" %>
+        <h1 style="font-weight: 500">導師陣容</h1>
+      <% elsif controller.action_name == "team" %>
+        <h1 style="font-weight: 500">梯次團隊</h1>
+      <% end %>
+    </div>
     <div class="container-fluid">
       <a class="img-responsive center-block" href="https://goo.gl/forms/vKxVy6VMqMPVopmo1" target="_blank"><%= image_tag("index/join.png", style: "max-width: 140px;") %></a>
     </div>
