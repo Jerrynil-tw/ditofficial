@@ -34,6 +34,10 @@
 	}
 
 </style> -->
+<% content_for :head do %>
+  <meta property="og:image" content="<%= image_tag("meta_banner.png") %>" />
+<% end %>
+
 <style type="text/css">
 	.convince {
 		box-shadow:6px 6px 6px rgba(20%,20%,40%,0.5),inset 1px 1px 4px 2px rgba(20%,20%,40%,0.5);
