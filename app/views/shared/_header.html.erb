@@ -3,7 +3,7 @@
     font-family: Helvetica,  helvetica, "微軟正黑體", "Microsoft JhengHei";
   }
   #header .navbar-header a {
-    padding-top: 5px;
+    /*background-color: yellow;*/
   }
 
   .navbar {
@@ -16,8 +16,8 @@
 
   /*xs*/
   @media screen and (max-width:767px){
-    #header .navbar-header {
-      padding: 0 8px;
+    #header .navbar-header a{
+      /*padding: 0 8px;*/
     }
   }
 
@@ -41,7 +41,7 @@
   .dropdown {
       position: relative;
       display: inline-block;
-      margin:0 -5px ;
+      margin:0 -4px ;
   }
 
   /* Dropdown Content (Hidden by Default) */
@@ -53,8 +53,8 @@
       /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
       z-index: 1;
       /*padding-bottom: 10px;*/
-      margin-left: -60px;
-      padding-left: 71px;
+      margin-left: -65px;
+      padding-left: 75px;
       /*opacity: 0.9;*/
   }
 
@@ -70,9 +70,10 @@
   }
 
   #myDropdown a {
-    font-size: 15px;
-    padding: 0 5px;
+    font-size: 14px;
+    padding: 0 2px;
   }
+
   /* Change color of dropdown links on hover */
   /*.dropdown-content a:hover {background-color: #f1f1f1}*/
 
@@ -123,9 +124,9 @@
         <div class="navbar-header navbar-right">
           <!-- xs -->
           <div class="visible-xs">
-            <a href="https://ditlabs.tw" style="padding-bottom: 8px; margin-left: 9px; margin-right: 2px;"><i class="glyphicon glyphicon-home"></i></a>
-            <div class="dropdown" style="margin-right: -9px;">
-              <button onclick="myFunction()" class="dropbtn">加速計畫</button>
+            <a href="https://ditlabs.tw" style="margin-left: 15px; margin-bottom: -3px"><i class="glyphicon glyphicon-home"></i></a>
+            <div class="dropdown" style="margin-right: -5px; margin-top: -12px;">
+              <button onclick="myFunction()" class="dropbtn" style="font-size: 16px; margin-bottom: -3px">加速計畫</button>
               <div id="myDropdown" class="dropdown-content">
                 <a href="https://ditlabs.tw/plan">計畫總覽</a>
                 <a href="https://ditlabs.tw/procedure">投資流程</a>
@@ -133,8 +134,8 @@
                 <a href="https://ditlabs.tw/notice">重要須知</a>
               </div>
             </div>
-            <a href="https://ditlabs.tw/mentor" style="margin-right: -9px;">導師陣容</a>
-            <a href="https://ditlabs.tw/team">梯次團隊</a>
+            <a href="https://ditlabs.tw/mentor" style="margin-right: 3px; margin-bottom: -3px;">導師陣容</a>
+            <a href="https://ditlabs.tw/team" style="margin-bottom: -3px">梯次團隊</a>
           </div>
           <a class="logo4 img-responsive hidden-sm hidden-xs" href="https://goo.gl/forms/vKxVy6VMqMPVopmo1" target="_blank"><%= image_tag("index/join.png", style: "max-width: 140px; border-bottom-style: none;", class: "logo4") %>
           </a>
